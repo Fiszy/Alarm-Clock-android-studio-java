@@ -1,4 +1,10 @@
 # Alarm-Clock-android-studio-java
+<br>
+#git clone https://github.com/Fiszy/Alarm-Clock-android-studio-java.git my_alarm_clock
+
+#ScreenSHOTS
+
+Long press any alarm to edit or delete
 
 ![Optional Text](../master/Screenshot/screen1.png)<br>
 

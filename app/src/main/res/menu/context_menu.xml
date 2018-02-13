@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/context_item_new"
+        android:title="@string/menu_item_new"
+        android:icon="@drawable/glyphicons_432_plus"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/context_item_save"
+        android:title="@string/menu_item_save"
+        android:icon="@drawable/glyphicons_443_floppy_disk"
+        app:showAsAction="ifRoom"
+        >
+    </item>
+
+</menu>

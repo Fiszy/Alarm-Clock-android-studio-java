@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fiszy.menutry.edit_activity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:padding="8sp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/widget"
+                android:text="Title" />
+
+            <EditText
+                style="@style/widget"
+                android:textColor="@color/black"
+                android:id="@+id/title"
+                android:singleLine="true" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingTop="8sp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/alarm_checkbox"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm" />
+
+                <Spinner
+                    android:id="@+id/occurence_spinner"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/occurence" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingTop="8sp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/date_button"
+                    android:layout_weight="2"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="onDateClick" />
+
+                <Button
+                    android:id="@+id/time_button"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="onTimeClick" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+        <Button
+            android:id="@+id/done"
+            style="@style/edit_button"
+            android:onClick="onDoneClick"
+            android:text="Done" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/edit_button"
+            android:onClick="onCancelClick"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
